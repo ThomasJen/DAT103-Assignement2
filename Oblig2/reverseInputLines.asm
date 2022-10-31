@@ -38,7 +38,7 @@ push_loop:
   mov edx, eax                                ; Save copy of char count
 ;------------
 ; solution
-:------------
+;------------
 pop_loop:
   pop dword ecx                               ; Get char of stack
   dec eax                                     ; Decrement counter
