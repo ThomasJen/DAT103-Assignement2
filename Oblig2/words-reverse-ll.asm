@@ -11,8 +11,7 @@ section .data
 section .bss
    input_buffer resb buf_size
 
-;  M A I N  E N T R Y  P O I N T
-;  =============================
+
 section .text
 global _start
 _start:
