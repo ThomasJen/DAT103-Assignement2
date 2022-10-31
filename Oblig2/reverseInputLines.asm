@@ -13,13 +13,13 @@ reverseInputLines:
 
 there_is_input:
   
-  mov eax, esp   ; Original stack pointer
-  sub eax, edx   ; Enough space to store the read string
+  ;mov eax, esp   ; Original stack pointer
+  ;sub eax, edx   ; Enough space to store the read string
 
-  mov ebx, 3     ; Complement of round-to-multiples-of-4 bitmask
-  not ebx   
-  and eax, ebx   ; Align stack location to 32-bit
-  mov esp, eax   ; Allocate the space on the stack
+  ;mov ebx, 3     ; Complement of round-to-multiples-of-4 bitmask
+  ;not ebx   
+  ;and eax, ebx   ; Align stack location to 32-bit
+  ;mov esp, eax   ; Allocate the space on the stack
 
   mov eax, 0     ; Index into the buffer when copying
 
